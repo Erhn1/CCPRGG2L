@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class App5 {
+public class Act5 {
 
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
