@@ -17,7 +17,7 @@ public class regExActivity {
         */
         File file = new File("C:\\Users\\Charles\\Documents\\email.txt");
         BufferedReader br = new BufferedReader (new FileReader(file));
-        String pattern = "^[\\w\\d-_]{8,24}$";
+        String pattern = "(^[a-z])([a-z0-9-_]*){8,25}";
         String text;
         
         while((text = br.readLine()) != null){
@@ -45,7 +45,7 @@ public class regExActivity {
         */
         File file = new File("C:\\Users\\Charles\\Documents\\username.txt");
         BufferedReader br = new BufferedReader (new FileReader(file));
-        String pattern = "^[\\w\\d-_]{7,}@[\\w\\d-_]+[.][\\w\\d-_]{2,}$";
+        String pattern = "^[\\w\\d_-]{7,}@[\\w\\d_-]+\\.[\\w\\d_-]{2,}$";
         String text;
         
         while((text = br.readLine()) != null){
